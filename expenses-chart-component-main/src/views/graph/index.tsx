@@ -1,7 +1,7 @@
-import React from "react";
-import Node from "../../components/graphNode";
-import data from "../../data.json";
-import styles from "./index.module.css";
+import Node from '../../components/graphNode';
+import data from '../../data.json';
+import styles from './index.module.css';
+
 export default function index() {
   const total = data.reduce((acc, item) => {
     return acc + item.amount;

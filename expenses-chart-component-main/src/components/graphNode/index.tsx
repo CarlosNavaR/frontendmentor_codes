@@ -1,5 +1,4 @@
-import React from "react";
-import styles from "./index.module.css";
+import styles from './index.module.css';
 
 type chartProps = {
   title: string;
@@ -8,17 +7,17 @@ type chartProps = {
 
 export default function index({ title, qnty }: chartProps) {
   const date = new Date();
-  const activeDay = date.toDateString().split(" ")[0].toLowerCase();
+  const activeDay = date.toDateString().split(' ')[0].toLowerCase();
   return (
     <div className={styles.graph_container}>
       <div className={styles.graph}>
         <span className={styles.graph_bar_qnty}>${qnty}</span>
         <div
           className={`${styles.graph_bar} ${
-            activeDay === title ? styles.graph_bar_active : ""
+            activeDay === title ? styles.graph_bar_active : ''
           }`}
           style={{
-            height: `${qnty}%`,
+            height: `${qnty}%`
           }}
         />
       </div>
