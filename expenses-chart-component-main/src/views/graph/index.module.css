@@ -1,0 +1,62 @@
+@import "../../styles/variables.css";
+
+.chart_container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bar-color-4);
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  .chart_header {
+    text-align: start;
+    width: 100%;
+    color: var(--bar-color-1);
+  }
+
+  .chart {
+    display: flex;
+  }
+
+  .chart_footer {
+    display: flex;
+    justify-self: space-between;
+    border-top: 1px solid var(--bar-color-3);
+    width: 100%;
+    padding: 0.5rem;
+
+    .chart_footer_total {
+      flex: 0.5;
+      text-align: start;
+
+      & p {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0;
+        color: var(--bar-color-1);
+      }
+    }
+
+    .chart_footer_average {
+      flex: 0.5;
+      text-align: end;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+
+      & p {
+        font-weight: 700;
+        margin: 0;
+        color: var(--bar-color-1);
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+
+span {
+  color: var(--bar-color-2);
+  margin: 0;
+  font-size: 0.8rem;
+}

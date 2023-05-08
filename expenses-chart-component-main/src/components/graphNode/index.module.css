@@ -1,0 +1,53 @@
+@import "../../styles/variables.css";
+
+.graph_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .graph {
+    height: 200px;
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 0.5rem;
+    border-radius: 0.2rem;
+
+    .graph_bar {
+      background-color: var(--primary-color);
+      border-radius: 0.2rem;
+      height: 100%;
+      width: 100%;
+
+      &.graph_bar_active {
+        background-color: var(--secondary-color);
+      }
+
+      &.graph_bar:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .graph_bar_qnty {
+      background-color: var(--bar-color-1);
+      font-size: 0.7em;
+      border-radius: 0.2rem;
+      margin-bottom: 0.5rem;
+      padding: 0.2rem;
+      color: var(--bar-color-4);
+      display: none;
+    }
+
+    &.graph:hover {
+      .graph_bar_qnty {
+        display: block;
+      }
+    }
+  }
+
+  .graph_title {
+    margin: 0;
+    color: var(--bar-color-2);
+  }
+}

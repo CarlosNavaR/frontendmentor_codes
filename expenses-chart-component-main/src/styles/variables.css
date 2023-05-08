@@ -1,0 +1,11 @@
+:root {
+    --primary-color: hsl(10, 79%, 65%);
+    --secondary-color: hsl(186, 34%, 60%);
+
+    --bar-color-1:  hsl(25, 47%, 15%);
+    --bar-color-2:  hsl(28, 10%, 53%);
+    --bar-color-3:   hsl(27, 66%, 92%);
+    --bar-color-4:  hsl(33, 100%, 98%);
+
+    --font-size: 18px;
+}
