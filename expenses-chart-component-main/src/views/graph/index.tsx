@@ -12,6 +12,7 @@ export default function index() {
       <div className={styles.chart_header}>
         <h1>Spending - last 7 days</h1>
       </div>
+
       <div className={styles.chart}>
         {data.map((item, index) => {
           return <Node key={index} title={item.day} qnty={item?.amount} />;

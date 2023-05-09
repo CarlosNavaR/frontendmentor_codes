@@ -1,7 +1,7 @@
-@import "../../styles/variables.css";
+@import '../../styles/variables.css';
 
 .chart_container {
-  width: 500px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,12 +17,15 @@
 
   .chart {
     display: flex;
+    width: 100%;
+    padding: 0 0 1rem 0;
+    border-bottom: 1px solid var(--bar-color-3);
   }
 
   .chart_footer {
     display: flex;
     justify-self: space-between;
-    border-top: 1px solid var(--bar-color-3);
+
     width: 100%;
     padding: 0.5rem;
 
@@ -52,6 +55,12 @@
         font-size: 0.9em;
       }
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chart_container {
+    width: 80%;
   }
 }
 
